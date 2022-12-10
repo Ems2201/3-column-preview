@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 310px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+img {
+    width: 65px;
+    height: 40px;
+    margin: 48px;
+}
+
+.title {
+    font-size: 40px;
+    margin: -5px 50px;
+    font-family: 'Big Shoulders Display';
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.text {
+    line-height: 1.8em;
+    letter-spacing: 1.3px;
+    font-family: 'Lexend Deca';
+    font-size: 13px;
+    margin: 40px 45px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+    border: 1px solid white;
+    width: 150px;
+    height: 50px;
+    margin: 38px 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+}
+
+#sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+#sedan button:hover {
+    cursor:pointer;
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+#suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+#suv button:hover {
+    cursor:pointer;
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+#luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+#luxury button:hover {
+    cursor:pointer;
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
+
+    div {
+        width: 280px;
+        height: 250px;
+    }
+
+    #sedan {
+        border-radius: 5% 5% 0% 0%;
+    }
+
+    #luxury {
+        border-radius: 0% 0% 5% 5%;
+    }
+
+    img {
+        width: 44px;
+        height: 34px;
+        margin: 30px 38px;
+    }
+
+    .title {
+        margin: -20px 40px;
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 9px;
+        margin: 30px 40px 0px 40px;
+    }
+
+    button {
+        font-size: 10px;
+        width: 90px;
+        height: 30px;
+        margin: 20px 40px;
+    }
+}
